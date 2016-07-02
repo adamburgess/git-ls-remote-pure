@@ -1,6 +1,6 @@
 {
   "name": "git-ls-remote-pure",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "a pure node implementation of git ls-remote for HTTPS repos",
   "main": "index.js",
   "keywords": ["git"],

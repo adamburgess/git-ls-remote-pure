@@ -2,16 +2,19 @@ import request from 'request'
 
 export default requestOpts =>
   new Promise((resolve, reject) => {
-    if (typeof requestOpts == 'string')
+    if (typeof requestOpts == 'string') {
       requestOpts = {
         url: requestOpts
       };
-    else if(requestOpts.uri) {
+    } else if(requestOpts.uri) {
       requestOpts.url = requestOpts.uri;
       delete requestOpts.uri;
     }
+
     requestOpts.url += '/info/refs?service=git-upload-pack';
     requestOpts.encoding = null;
+    requestOpts.headers['user-agent'] = 'npm:git-ls-remote-pure';
+
     request(requestOpts, (e, response) => {
       if (response.statusCode != 200) return reject(response.statusCode);
       var lines = [];
