@@ -13,7 +13,7 @@ export default requestOpts =>
     requestOpts.url += '/info/refs?service=git-upload-pack';
     requestOpts.encoding = null;
     request(requestOpts, (e, response) => {
-      if (response.statusCode != 200) reject(response.statusCode);
+      if (response.statusCode != 200) return reject(response.statusCode);
       var lines = [];
       var body = response.body;
       var i = 0;
