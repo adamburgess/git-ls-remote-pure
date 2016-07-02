@@ -8,7 +8,7 @@ usage:
 var lsRemote = require('git-ls-remote-pure');
 lsRemote('https://github.com/adamburgess/git-ls-remote-pure.git')
   .then(refs => {
-    // refs is an array of { ref, sha }
+    // refs is an array of { name, sha }
   })
 ```
 

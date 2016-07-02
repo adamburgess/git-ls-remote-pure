@@ -43,13 +43,13 @@ function parseLines(lines) {
 
   // parse into any_ref
   var refs = lines.map(line => line.split(' ')).map(line => ({
-    ref: line[1],
+    name: line[1],
     sha: line[0]
   }));
 
   // mark lines as peeled - peeled_ref
   for (var i = 0; i < refs.length - 1; i++) {
-    if (refs[i+1].ref.substr(-3) == '^{}') {
+    if (refs[i+1].name.substr(-3) == '^{}') {
       refs[i].peeled = true;
       refs[i+1] = undefined;
       i++;
