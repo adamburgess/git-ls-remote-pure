@@ -2,6 +2,8 @@
 
 A pure node implementation of `git ls-remote` for HTTPS repos.
 
+![npm](https://img.shields.io/npm/v/git-ls-remote-pure) ![node-current](https://img.shields.io/node/v/git-ls-remote-pure)
+
 usage:
 
 ```js
