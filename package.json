@@ -1,6 +1,6 @@
 {
   "name": "git-ls-remote-pure",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "a pure node implementation of git ls-remote for HTTPS repos",
   "type": "module",
   "module": "index.js",
@@ -18,9 +18,13 @@
     "type": "git",
     "url": "git+https://github.com/adamburgess/git-ls-remote-pure.git"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "build": "tsc",
-    "test": "mocha test/test.js"
+    "test": "mocha test/test.js",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/chai": "^4.2.15",
