@@ -1,2 +1,4 @@
-jspm_packages
-node_modules
+pnpm-lock.yaml
+test
+src
+tsconfig.json
