@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "pta test/test.js"
+    "test": "mocha test/test.js"
   },
   "devDependencies": {
     "@types/chai": "^4.2.15",
