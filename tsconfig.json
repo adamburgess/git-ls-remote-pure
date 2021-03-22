@@ -1,0 +1,13 @@
+{
+    "files": ["src/index.ts"],
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "outDir": ".",
+        "declaration": true,
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node"
+    }
+}
