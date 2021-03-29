@@ -3,7 +3,7 @@ dependencies:
   node-fetch: 2.6.1
 devDependencies:
   '@types/chai': 4.2.15
-  '@types/node': 14.14.35
+  '@types/node': 14.14.37
   '@types/node-fetch': 2.5.8
   chai: 4.3.4
   mocha: 8.3.2
@@ -16,15 +16,15 @@ packages:
       integrity: sha512-rYff6FI+ZTKAPkJUoyz7Udq3GaoDZnxYDEvdEdFZASiA7PoErltHezDishqQiSDWrGxvxmplH304jyzQmjp0AQ==
   /@types/node-fetch/2.5.8:
     dependencies:
-      '@types/node': 14.14.35
+      '@types/node': 14.14.37
       form-data: 3.0.1
     dev: true
     resolution:
       integrity: sha512-fbjI6ja0N5ZA8TV53RUqzsKNkl9fv8Oj3T7zxW7FGv1GSH7gwJaNF8dzCjrqKaxKeUpTz4yT1DaJFq/omNpGfw==
-  /@types/node/14.14.35:
+  /@types/node/14.14.37:
     dev: true
     resolution:
-      integrity: sha512-Lt+wj8NVPx0zUmUwumiVXapmaLUcAk3yPuHCFVXras9k5VT9TdhJqKqGVUQCD60OTMCl0qxJ57OiTL0Mic3Iag==
+      integrity: sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
   /@ungap/promise-all-settled/1.1.2:
     dev: true
     resolution:
@@ -733,7 +733,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@types/chai': ^4.2.15
-  '@types/node': ^14.14.35
+  '@types/node': ^14.14.37
   '@types/node-fetch': ^2.5.8
   chai: ^4.3.4
   merge-options: ^3.0.4
