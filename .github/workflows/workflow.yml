@@ -22,7 +22,8 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-${{ hashFiles('./{package.json,pnpm-lock.yaml}') }}
+          key: ${{ runner.os }}-node${{ matrix.node }}-${{ hashFiles('./package.json', './pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-node${{ matrix.node }}-
       - name: install dependencies
         run: npm install -g pnpm && pnpm install
       - name: build ts
