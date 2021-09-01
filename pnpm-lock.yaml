@@ -2,13 +2,13 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/chai': ^4.2.21
-  '@types/node': ^14.17.7
+  '@types/node': ^14.17.14
   '@types/node-fetch': ^2.5.12
   chai: ^4.3.4
   merge-options: ^3.0.4
-  mocha: ^9.0.3
+  mocha: ^9.1.1
   node-fetch: ^2.6.1
-  typescript: ^4.3.5
+  typescript: ^4.4.2
 
 dependencies:
   merge-options: 3.0.4
@@ -16,11 +16,11 @@ dependencies:
 
 devDependencies:
   '@types/chai': 4.2.21
-  '@types/node': 14.17.7
+  '@types/node': 14.17.14
   '@types/node-fetch': 2.5.12
   chai: 4.3.4
-  mocha: 9.0.3
-  typescript: 4.3.5
+  mocha: 9.1.1
+  typescript: 4.4.2
 
 packages:
 
@@ -33,6 +33,10 @@ packages:
     dependencies:
       '@types/node': 14.17.7
       form-data: 3.0.1
+    dev: true
+
+  /@types/node/14.17.14:
+    resolution: {integrity: sha512-rsAj2u8Xkqfc332iXV12SqIsjVi07H479bOP4q94NAcjzmAvapumEhuVIt53koEf7JFrpjgNKjBga5Pnn/GL8A==}
     dev: true
 
   /@types/node/14.17.7:
@@ -422,8 +426,8 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /mocha/9.0.3:
-    resolution: {integrity: sha512-hnYFrSefHxYS2XFGtN01x8un0EwNu2bzKvhpRFhgoybIvMaOkkL60IVPmkb5h6XDmUl4IMSB+rT5cIO4/4bJgg==}
+  /mocha/9.1.1:
+    resolution: {integrity: sha512-0wE74YMgOkCgBUj8VyIDwmLUjTsS13WV1Pg7l0SHea2qzZzlq7MDnfbPsHKcELBRk3+izEVkRofjmClpycudCA==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
@@ -607,8 +611,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.3.5:
-    resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
+  /typescript/4.4.2:
+    resolution: {integrity: sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
