@@ -8,7 +8,7 @@ specifiers:
   merge-options: ^3.0.4
   mocha: ^9.2.1
   node-fetch: ^3.0.0
-  typescript: ^4.5.5
+  typescript: ^4.6.2
 
 dependencies:
   merge-options: 3.0.4
@@ -20,7 +20,7 @@ devDependencies:
   '@types/node-fetch': 3.0.3
   chai: 4.3.6
   mocha: 9.2.1
-  typescript: 4.5.5
+  typescript: 4.6.2
 
 packages:
 
@@ -564,8 +564,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.5.5:
-    resolution: {integrity: sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==}
+  /typescript/4.6.2:
+    resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
