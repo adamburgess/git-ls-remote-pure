@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/chai': ^4.3.1
-  '@types/node': ^16.11.32
+  '@types/node': ^16.11.42
   '@types/node-fetch': ^3.0.2
   chai: ^4.3.6
   merge-options: ^3.0.4
   mocha: ^10.0.0
   node-fetch: ^3.0.0
-  typescript: ^4.6.4
+  typescript: ^4.7.4
 
 dependencies:
   merge-options: 3.0.4
@@ -16,11 +16,11 @@ dependencies:
 
 devDependencies:
   '@types/chai': 4.3.1
-  '@types/node': 16.11.32
+  '@types/node': 16.11.42
   '@types/node-fetch': 3.0.3
   chai: 4.3.6
   mocha: 10.0.0
-  typescript: 4.6.4
+  typescript: 4.7.4
 
 packages:
 
@@ -35,8 +35,8 @@ packages:
       node-fetch: 3.0.0
     dev: true
 
-  /@types/node/16.11.32:
-    resolution: {integrity: sha512-+fnfNvG5JQdC1uGZiTx+0QVtoOHcggy6+epx65JYroPGsE1uhp+vo5kioiGKsAkor6ocwHteU2EvO7N8vtOZtA==}
+  /@types/node/16.11.42:
+    resolution: {integrity: sha512-iwLrPOopPy6V3E+1yHTpJea3bdsNso0b0utLOJJwaa/PLzqBt3GZl3stMcakc/gr89SfcNk2ki3z7Gvue9hYGQ==}
     dev: true
 
   /@ungap/promise-all-settled/1.1.2:
@@ -566,8 +566,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.6.4:
-    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
+  /typescript/4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
