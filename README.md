@@ -33,4 +33,4 @@ const ls = await lsRemote('https://github.com/adamburgess/git-ls-remote-pure.git
 */
 ```
 
-Need to connect to private repos? Provide an options object with authentication that `node-fetch` will understand.
+Need to connect to private repos? Provide an [options](https://developer.mozilla.org/en-US/docs/Web/API/fetch#:~:text=A%20Request%20object.-,options,-Optional) object with authentication that `fetch` will understand.

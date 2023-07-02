@@ -1,3 +1,7 @@
+# 4.0.1
+
+update readme
+
 # 4.0.0
 
 Breaking: use native fetch/TextDecoder.
