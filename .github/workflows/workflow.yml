@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '14', '16' ]
+        node: [ '18', '19', '20' ]
     env:
       FORCE_COLOR: 1
     steps:
