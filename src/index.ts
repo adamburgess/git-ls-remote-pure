@@ -1,29 +1,24 @@
-import fetch, { RequestInit } from 'node-fetch'
-import merge from 'merge-options'
-
 async function lsRemote(url: string, fetchOptions?: RequestInit) {
     url += '/info/refs?service=git-upload-pack';
 
-    const defaultOpts = {
-        headers: {
-            'User-Agent': 'npm:git-ls-remote-pure'
-        }
-    };
-    const opts: RequestInit = fetchOptions ? merge(defaultOpts, fetchOptions) : defaultOpts;
+    const opts: RequestInit = fetchOptions ?? {};
+    opts.headers ??= {};
+    (opts.headers as Record<string, string>)['User-Agent'] = 'npm:git-ls-remote-pure';
 
     const result = await fetch(url, opts);
     if (result.status !== 200) throw new Error(`Failed to ls remote: ${result.statusText}`);
 
-    const body = await result.buffer();
+    const body = await result.arrayBuffer();
+    const decoder = new TextDecoder('ascii');
 
     let i = 0;
     let lines = [];
-    while (i < body.length) {
-        const lenBytes = parseInt(body.toString('ascii', i, i + 4), 16);
+    while (i < body.byteLength) {
+        const lenBytes = parseInt(decoder.decode(body.slice(i, i + 4)), 16);
         if (lenBytes == 0) {
             i += 4;
         } else {
-            const line = body.toString('ascii', i + 4, i += lenBytes);
+            const line = decoder.decode(body.slice(i + 4, i += lenBytes));
             lines.push(line.trim());
         }
     }
@@ -33,12 +28,12 @@ async function lsRemote(url: string, fetchOptions?: RequestInit) {
     const branchHeader = 'refs/heads/';
     const branches = Object.fromEntries(
         refs.filter(f => f.name.startsWith(branchHeader))
-            .map(f => [f.name.substr(branchHeader.length), f.sha])
+            .map(f => [f.name.substring(branchHeader.length), f.sha])
     );
     const tagHeader = 'refs/tags/';
     const tags = Object.fromEntries(
         refs.filter(ref => ref.name.startsWith(tagHeader))
-        .map(f => [f.name.substr(tagHeader.length), f.sha])
+        .map(f => [f.name.substring(tagHeader.length), f.sha])
     );
     
     return {
@@ -55,7 +50,7 @@ function parseLines(lines: string[]) {
     lines.shift();
     if (lines[0].indexOf('\0')) {
         // non_empty_list
-        lines[0] = lines[0].substr(0, lines[0].indexOf('\0'));
+        lines[0] = lines[0].substring(0, lines[0].indexOf('\0'));
     } else if (lines[0].split(' ')[1] == 'capabilities^{}') {
         // empty_list
         return [];

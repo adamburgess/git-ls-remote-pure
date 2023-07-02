@@ -10,16 +10,12 @@
   ],
   "author": "adamburgess",
   "license": "MIT",
-  "dependencies": {
-    "merge-options": "^3.0.4",
-    "node-fetch": "^3.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamburgess/git-ls-remote-pure.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "scripts": {
     "build": "tsc",
@@ -29,7 +25,6 @@
   "devDependencies": {
     "@types/chai": "^4.3.1",
     "@types/node": "^16.11.42",
-    "@types/node-fetch": "^3.0.2",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "typescript": "^4.7.4"
