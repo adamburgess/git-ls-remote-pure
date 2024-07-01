@@ -23,10 +23,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.14",
-    "@types/node": "^20.12.2",
-    "chai": "^5.1.0",
-    "mocha": "^10.4.0",
-    "typescript": "^5.4.3"
+    "@types/chai": "^4.3.16",
+    "@types/node": "^20.14.9",
+    "chai": "^5.1.1",
+    "mocha": "^10.5.2",
+    "typescript": "^5.5.2"
   }
 }
