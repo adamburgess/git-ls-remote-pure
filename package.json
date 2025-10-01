@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "@types/chai": "^5.2.2",
-    "@types/node": "^22.16.2",
-    "chai": "^5.2.1",
-    "mocha": "^11.7.1",
-    "typescript": "^5.8.3"
+    "@types/node": "^22.18.8",
+    "chai": "^6.2.0",
+    "mocha": "^11.7.3",
+    "typescript": "^5.9.3"
   }
 }
